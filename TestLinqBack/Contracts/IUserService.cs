@@ -9,6 +9,6 @@ public interface IUserService
     IEnumerable<RoleDTO> GetUsersRole();
     RoleDTO GetFrequentRole();
     IEnumerable<UserActualProjectsDTO> GetUserActualProjects(int userId);
-    // IEnumerable<User> GetUsersAtLeastInOneProject(IEnumerable<string> searchTerms);
+    IEnumerable<User> GetUsersAtLeastInOneProject(string searchTerms);
     IEnumerable<UserProjectDTO> GetUserProject();
 }

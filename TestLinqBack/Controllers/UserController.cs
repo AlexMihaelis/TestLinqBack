@@ -42,4 +42,10 @@ public class UserController : ControllerBase
     {
         return Ok(_userService.GetUserProject());
     }
+    
+    [HttpGet("api/users/get-user-at-least-in-one-project")]
+    public IActionResult GetUsersAtLeastInOneProject(string searchTerms)
+    {
+        return Ok(_userService.GetUsersAtLeastInOneProject(searchTerms));
+    } 
 }

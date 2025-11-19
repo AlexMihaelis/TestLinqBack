@@ -51,15 +51,16 @@ public class UserService : IUserService
     {
         return LinqData.Users.SelectMany(u => u.Projects, (user, project) => new UserProjectDTO
             {
-                UserName =  user.Username,
-                ProjectName = project.Name
+                UserProject = $"{user.Username} - {project.Name}"
             });
     }
 
-    // public IEnumerable<User> GetUsersAtLeastInOneProject(IEnumerable<string> searchTerms)
-    // {
-    //    
-    // }
+    public IEnumerable<User> GetUsersAtLeastInOneProject(string searchTerms)
+    {
+       //Найти всех пользователей, которые участвуют хотя бы в одном проекте, название которого содержит любое слово из списка 
+       //searchTerms (Присылаем с фронта)
+       return LinqData.Users.Where(u => u.Projects.Any(p => p.Name.Contains(searchTerms)));
+    }
     
     
 }
