@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\elina\\source\\repos\\TestLinqBack\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0CEED6F2-BBCA-43C7-8CB0-92763651EE5F}|TestLinqBack\\TestLinqBack.csproj|c:\\users\\elina\\source\\repos\\testlinqback\\testlinqback\\readme!!!!!.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0CEED6F2-BBCA-43C7-8CB0-92763651EE5F}|TestLinqBack\\TestLinqBack.csproj|solutionrelative:testlinqback\\readme!!!!!.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CEED6F2-BBCA-43C7-8CB0-92763651EE5F}|TestLinqBack\\TestLinqBack.csproj|c:\\users\\elina\\source\\repos\\testlinqback\\testlinqback\\services\\usersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CEED6F2-BBCA-43C7-8CB0-92763651EE5F}|TestLinqBack\\TestLinqBack.csproj|solutionrelative:testlinqback\\services\\usersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CEED6F2-BBCA-43C7-8CB0-92763651EE5F}|TestLinqBack\\TestLinqBack.csproj|c:\\users\\elina\\source\\repos\\testlinqback\\testlinqback\\contracts\\iusersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CEED6F2-BBCA-43C7-8CB0-92763651EE5F}|TestLinqBack\\TestLinqBack.csproj|solutionrelative:testlinqback\\contracts\\iusersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CEED6F2-BBCA-43C7-8CB0-92763651EE5F}|TestLinqBack\\TestLinqBack.csproj|c:\\users\\elina\\source\\repos\\testlinqback\\testlinqback\\models\\dto\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CEED6F2-BBCA-43C7-8CB0-92763651EE5F}|TestLinqBack\\TestLinqBack.csproj|solutionrelative:testlinqback\\models\\dto\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CEED6F2-BBCA-43C7-8CB0-92763651EE5F}|TestLinqBack\\TestLinqBack.csproj|c:\\users\\elina\\source\\repos\\testlinqback\\testlinqback\\data\\linqdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CEED6F2-BBCA-43C7-8CB0-92763651EE5F}|TestLinqBack\\TestLinqBack.csproj|solutionrelative:testlinqback\\data\\linqdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 643,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "README!!!!!.txt",
+              "DocumentMoniker": "C:\\Users\\elina\\source\\repos\\TestLinqBack\\TestLinqBack\\README!!!!!.txt",
+              "RelativeDocumentMoniker": "TestLinqBack\\README!!!!!.txt",
+              "ToolTip": "C:\\Users\\elina\\source\\repos\\TestLinqBack\\TestLinqBack\\README!!!!!.txt",
+              "RelativeToolTip": "TestLinqBack\\README!!!!!.txt",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-11-18T13:04:23.443Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{01321f1c-6c9e-3b5b-9c0f-66d2a373c254}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUsersService.cs",
+              "DocumentMoniker": "C:\\Users\\elina\\source\\repos\\TestLinqBack\\TestLinqBack\\Contracts\\IUsersService.cs",
+              "RelativeDocumentMoniker": "TestLinqBack\\Contracts\\IUsersService.cs",
+              "ToolTip": "C:\\Users\\elina\\source\\repos\\TestLinqBack\\TestLinqBack\\Contracts\\IUsersService.cs",
+              "RelativeToolTip": "TestLinqBack\\Contracts\\IUsersService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T16:06:54.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsersServices.cs",
+              "DocumentMoniker": "C:\\Users\\elina\\source\\repos\\TestLinqBack\\TestLinqBack\\Services\\UsersServices.cs",
+              "RelativeDocumentMoniker": "TestLinqBack\\Services\\UsersServices.cs",
+              "ToolTip": "C:\\Users\\elina\\source\\repos\\TestLinqBack\\TestLinqBack\\Services\\UsersServices.cs",
+              "RelativeToolTip": "TestLinqBack\\Services\\UsersServices.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T16:06:46.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoleDTO.cs",
+              "DocumentMoniker": "C:\\Users\\elina\\source\\repos\\TestLinqBack\\TestLinqBack\\Models\\DTO\\RoleDTO.cs",
+              "RelativeDocumentMoniker": "TestLinqBack\\Models\\DTO\\RoleDTO.cs",
+              "ToolTip": "C:\\Users\\elina\\source\\repos\\TestLinqBack\\TestLinqBack\\Models\\DTO\\RoleDTO.cs",
+              "RelativeToolTip": "TestLinqBack\\Models\\DTO\\RoleDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T16:06:33.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LinqData.cs",
+              "DocumentMoniker": "C:\\Users\\elina\\source\\repos\\TestLinqBack\\TestLinqBack\\Data\\LinqData.cs",
+              "RelativeDocumentMoniker": "TestLinqBack\\Data\\LinqData.cs",
+              "ToolTip": "C:\\Users\\elina\\source\\repos\\TestLinqBack\\TestLinqBack\\Data\\LinqData.cs",
+              "RelativeToolTip": "TestLinqBack\\Data\\LinqData.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAA9wLgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T13:27:19.955Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 20,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

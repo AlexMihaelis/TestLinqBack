@@ -1,0 +1,111 @@
+[
+  {
+    "ContainingType": "TestLinqBack.Controllers.DepartmentController",
+    "Method": "GetDepartmentSalarysSum",
+    "RelativePath": "api/department/get-deparment-salarys-sum",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestLinqBack.Controllers.TestProjectController",
+    "Method": "GetHelloWorld",
+    "RelativePath": "api/get-hello-world",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestLinqBack.Controllers.TestProjectController",
+    "Method": "GetHelloWorldFromService",
+    "RelativePath": "api/get-hello-world-from-service",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestLinqBack.Controllers.TestProjectController",
+    "Method": "GetUsers",
+    "RelativePath": "api/get-users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestLinqBack.Controllers.ProjectController",
+    "Method": "GetDocProjects",
+    "RelativePath": "api/project/get-project-documents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestLinqBack.Controllers.ProjectController",
+    "Method": "GetProjects",
+    "RelativePath": "api/project/get-projects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestLinqBack.Controllers.UserController",
+    "Method": "GetUsersRole",
+    "RelativePath": "api/users/get-user-role",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestLinqBack.Controllers.UserController",
+    "Method": "GetUsersSalary",
+    "RelativePath": "api/users/get-user-salary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "salary",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

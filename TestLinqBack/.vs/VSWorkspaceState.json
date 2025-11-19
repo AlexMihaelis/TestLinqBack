@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Contracts",
+    "\\Controllers",
+    "\\Data",
+    "\\Models",
+    "\\Models\\Enums",
+    "\\Services"
+  ],
+  "SelectedNode": "\\Contracts\\IDepartmentsServices.cs",
+  "PreviewInSolutionExplorer": false
+}
