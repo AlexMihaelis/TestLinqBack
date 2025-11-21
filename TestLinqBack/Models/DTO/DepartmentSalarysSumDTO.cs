@@ -1,10 +1,20 @@
 ﻿namespace TestLinqBack.Models.DTO;
-
+/// <summary>
+/// Класс DepartmentSalarysSumDTO (DTO для обработанной информации по сумме зарплаты отдела), представляющий из себя модель данных
+/// {get; set;} - аксессоры/методы доступа - автоматические свойства, позволяющие читать и изменять значения полей. =>
+/// => Обеспечивают контроль над данными и инкапсуляцию.
+/// get - получить (чтение)
+/// set - установить (запись)
+/// public - публичный модификатор доступа
+/// class - тип данных, описывающий некую сущность (шаблон/"чертеж" для создания объектов, определяющий =>
+/// => их структуру (поля, данные) и поведение (методы, функции)
+/// </summary>
 public class DepartmentSalarysSumDTO
 {
-    public string DepartmentName { get; set; }
+    public string DepartmentName { get; set; } // DepartmentName - название отдела
     
-    public decimal SumSalary { get; set; }
+    // decimal - тип данных для финансовых расчетов
+    public decimal SumSalary { get; set; } // SumSalary - суммарная зп всех сотрудников
     
-    public int UserCount { get; set; }
+    public int UserCount { get; set; } // UserCount - количество сотрудников в отделе
 }

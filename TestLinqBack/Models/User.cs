@@ -1,18 +1,28 @@
 ﻿namespace TestLinqBack.Models;
-
+/// <summary>
+/// Класс User (Пользователь/сотрудник), представляющий из себя модель данных
+/// {get; set;} - аксессоры/методы доступа - автоматические свойства, позволяющие читать и изменять значения полей. =>
+/// => Обеспечивают контроль над данными и инкапсуляцию.
+/// get - получить (чтение)
+/// set - установить (запись)
+/// public - публичный модификатор доступа
+/// class - тип данных, описывающий некую сущность (шаблон/"чертеж" для создания объектов, определяющий =>
+/// => их структуру (поля, данные) и поведение (методы, функции)
+/// </summary>
 public class User
 {
-    public int Id { get; set; }
+    public int Id { get; set; } // Id - целочисленный идентификатор (первичный ключ)
     
-    public string Username { get; set; }
+    public string Username { get; set; } // Username - строка для хранения имени пользователя/сотрудника
     
-    public string Email { get; set; }
+    public string Email { get; set; } // Email - строка для хранения эл. почты пользователя/сотрудника
     
-    public int DepartmentId { get; set; }
+    public int DepartmentId { get; set; } // DepartmentId - идентификатор-ссылка на отдел пользователя/сотрудника (вторичный ключ)
     
-    public List<Project> Projects { get; set; }
+    public List<Project> Projects { get; set; } // Projects - коллекция связанных проектов ("1 к М")
     
-    public decimal Salary { get; set; }
+    // decimal - тип данных для финансовых расчетов
+    public decimal Salary { get; set; } // Salary - зарплата пользователя/сотрудника
     
-    public string Role { get; set; }
+    public string Role { get; set; } // Role - строка для хранения роли пользователя/сотрудника
 }

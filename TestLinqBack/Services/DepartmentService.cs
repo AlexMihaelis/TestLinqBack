@@ -6,9 +6,22 @@ using TestLinqBack.Models.DTO;
 using TestLinqBack.Models.Enums;
 
 namespace TestLinqBack.Services;
-
+/// <summary>
+/// Класс DepartmentService, представляющий из себя модель данных
+/// Класс DepartmentService реализует интерфейс IDepartmentService
+/// Service - бизнес-логика, агрегация данных ( объединение и обработка информации из нескольких источников или элементов =>
+/// => для получения сводных показателей)
+/// {get; set;} - аксессоры/методы доступа - автоматические свойства, позволяющие читать и изменять значения полей. =>
+/// => Обеспечивают контроль над данными и инкапсуляцию.
+/// get - получить (чтение)
+/// set - установить (запись)
+/// public - публичный модификатор доступа
+/// class - тип данных, описывающий некую сущность (шаблон/"чертеж" для создания объектов, определяющий =>
+/// => их структуру (поля, данные) и поведение (методы, функции)
+/// </summary>
 public class DepartmentService : IDepartmentService
 {
+    // Получение суммы зарплаты отделов
     public List<DepartmentSalarysSumDTO> GetDepartmentSalarysSum()
     {
         return LinqData.Users.GroupBy(d => d.DepartmentId)
@@ -27,6 +40,7 @@ public class DepartmentService : IDepartmentService
                 }).ToList();
     }
 
+    //  Поиск отдела с максимальной средней зарплатой
     public Department GetDepartmentMaxAvgSalarys()
     {
         return LinqData.Users.GroupBy(u => u.DepartmentId)
@@ -43,6 +57,7 @@ public class DepartmentService : IDepartmentService
             .First().Department;
     }
 
+    // Получение отделов с активным проектами
     public IEnumerable<Department> GetDepartWithActiveProjects()
     {
         

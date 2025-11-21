@@ -1,8 +1,18 @@
 namespace TestLinqBack.Models.DTO;
-
+/// <summary>
+/// Класс UserActualProjectsDTO (DTO для обработанной информации по актуальным проектам пользователя/сотрудника и все документы по этим проектам), =>
+/// представляющий из себя модель данных
+/// {get; set;} - аксессоры/методы доступа - автоматические свойства, позволяющие читать и изменять значения полей. =>
+/// => Обеспечивают контроль над данными и инкапсуляцию.
+/// get - получить (чтение)
+/// set - установить (запись)
+/// public - публичный модификатор доступа
+/// class - тип данных, описывающий некую сущность (шаблон/"чертеж" для создания объектов, определяющий =>
+/// => их структуру (поля, данные) и поведение (методы, функции)
+/// </summary>
 public class UserActualProjectsDTO
 {
-    public string UserName { get; set; }
-    public string ProjectName { get; set; }
-    public string DocumentName { get; set; }
+    public string UserName { get; set; } // UserName - строка для хранения имени пользователя/сотрудника
+    public string ProjectName { get; set; } // ProjectName - строка для хранения наименования проекта
+    public string DocumentName { get; set; } // DocumentName - строка для хранения названия документа
 }
