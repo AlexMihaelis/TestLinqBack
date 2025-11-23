@@ -74,8 +74,24 @@ public class UserService : IUserService
     }
 
     // Поиск всех пользователей/сотрудников, которые участвуют хотя бы в одном проекте
+    /// <summary>
+    /// public - модификатор доступа, доступ к методу есть везде где создан экземпляр этого класса
+    /// GetUsersAtLeastInOneProject название метода
+    /// </summary>
+    /// <param name="searchTerms">Часть или полное название проекта, по которому производим поиск</param>
+    /// <returns>
+    /// IEnumerable<User> - возвращаемый тип данных, после выполнения метода
+    /// коллекция пользователей
+    /// </returns>
     public IEnumerable<User> GetUsersAtLeastInOneProject(string searchTerms)
     {
+        // Выборка пользователей из "Базы" при помощи метода расширения .Where(),
+        // внутри метода делаем условие .Any() на все проекты пользователя таким образом,
+        // что бы хотя бы один проект пользователя содержал наше название searchTerms
+        // через .Contains(), если название содержит наш searchTerms, то .Contains() вернёт true
+        // после чего метод .Any() тоже вернёт true, потому что 1 из проектов удовлетворил условиям,
+        // и после этого этот пользователь попадёт в нашу выборку .Where()
+        // 
        return LinqData.Users.Where(u => u.Projects.Any(p => p.Name.Contains(searchTerms)));
     }
     
