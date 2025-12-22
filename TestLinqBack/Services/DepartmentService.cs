@@ -74,4 +74,9 @@ public class DepartmentService : IDepartmentService
             .Where(x => x.Users.Any(u => u.Projects.Any(p => p.Status == ProjectStatus.InProgress)))
             .Select(x => x.Department);
     }
+
+    public IEnumerable<Department> GetDepartments()
+    {
+        return LinqData.Departments;
+    }
 }

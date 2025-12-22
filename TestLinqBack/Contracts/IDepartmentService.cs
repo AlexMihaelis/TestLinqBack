@@ -16,4 +16,5 @@ public interface IDepartmentService
     
     // Получение отделов с активным проектами
     IEnumerable<Department> GetDepartWithActiveProjects();
+    IEnumerable<Department> GetDepartments();
 }

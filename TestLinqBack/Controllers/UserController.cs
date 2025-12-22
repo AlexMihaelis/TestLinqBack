@@ -73,6 +73,12 @@ public class UserController : ControllerBase
     {
         return Ok(_userService.GetUserProject());
     }
+
+    [HttpGet("api/users/get-users")]
+    public IActionResult GetUsers()
+    {
+        return Ok(_userService.GetUsers());
+    }
     
     /// <summary>
     /// Поиск всех пользователей/сотрудников, которые участвуют хотя бы в одном проекте

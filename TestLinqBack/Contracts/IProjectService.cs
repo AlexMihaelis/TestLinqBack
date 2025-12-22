@@ -13,7 +13,7 @@ public interface IProjectService
     IEnumerable<Document> GetDocProjects();
     
     // Фильтрация проектов по названию и статусу. Получение проектов по названию и статусу
-    IEnumerable<Project> GetProjects(string name, ProjectStatus status);
+    IEnumerable<Project> GetProjects(string name = null, ProjectStatus? status = null);
     
     // Поиск проектов, которые не имеют ни одного документа
     IEnumerable<Project> GetProjectsNoDocuments();
@@ -23,6 +23,8 @@ public interface IProjectService
     
     // Получение объединенного списка проектов пользователя/сотрудника, а также тех проектов, где он менеджер
     IEnumerable<Project> GetAllProjectsByUser(int userId);
+
+    IEnumerable<UserManagerProjectsDTO> GetAllProjectsByManagerUser();
     
     // Поиск проектов менеджера
     IEnumerable<Project> GetManagerProjects(int managerId);

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestLinqBack")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6bea9d1fa7496141e97b9a5843c026a4666b159")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0df909727ca06b3f080f596309ecc40f184c2d50")]
 [assembly: System.Reflection.AssemblyProductAttribute("TestLinqBack")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestLinqBack")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

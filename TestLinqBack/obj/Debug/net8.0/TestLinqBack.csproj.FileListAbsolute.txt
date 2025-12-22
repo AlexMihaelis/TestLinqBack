@@ -68,3 +68,4 @@ C:\Users\elina\source\repos\TestLinqBack\TestLinqBack\obj\Debug\net8.0\staticweb
 C:\Users\elina\source\repos\TestLinqBack\TestLinqBack\obj\Debug\net8.0\TestLinq.D64049B3.Up2Date
 C:\Users\elina\source\repos\TestLinqBack\TestLinqBack\obj\Debug\net8.0\TestLinqBack.genruntimeconfig.cache
 C:\Users\elina\source\repos\TestLinqBack\TestLinqBack\obj\Debug\net8.0\ref\TestLinqBack.dll
+C:\Users\elina\source\repos\TestLinqBack\TestLinqBack\obj\Debug\net8.0\TestLinqBack.sourcelink.json

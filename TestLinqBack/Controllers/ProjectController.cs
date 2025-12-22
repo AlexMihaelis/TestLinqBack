@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
 using TestLinqBack.Contracts;
 using TestLinqBack.Data;
 using TestLinqBack.Models.Enums;
@@ -40,7 +41,7 @@ public class ProjectController : ControllerBase
     /// <param name="status">Статус проекта с фронта</param>
     /// <returns>Результат выполнения запроса список проектов по названию и статусу</returns>
     [HttpGet("api/project/get-projects")]
-    public IActionResult GetProjects(string name, ProjectStatus status)
+    public IActionResult GetProjects(string name = null, ProjectStatus? status = null)
     {
         return Ok(_projectService.GetProjects(name, status));
     }
@@ -74,6 +75,12 @@ public class ProjectController : ControllerBase
     public IActionResult GetAllProjectsByUser(int userId)
     {
         return Ok(_projectService.GetAllProjectsByUser(userId));
+    }
+
+    [HttpGet("api/project/get-all-projects-by-manager-user")]
+    public IActionResult GetAllProjectsByManagerUser()
+    {
+        return Ok(_projectService.GetAllProjectsByManagerUser());
     }
 
     /// <summary>

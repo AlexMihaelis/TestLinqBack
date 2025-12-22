@@ -73,6 +73,11 @@ public class UserService : IUserService
             });
     }
 
+    public IEnumerable<User> GetUsers()
+    {
+        return LinqData.Users;
+    }
+
     // Поиск всех пользователей/сотрудников, которые участвуют хотя бы в одном проекте
     /// <summary>
     /// public - модификатор доступа, доступ к методу есть везде где создан экземпляр этого класса

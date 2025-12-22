@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TestLinqBack.Contracts;
+using TestLinqBack.Models;
 
 namespace TestLinqBack.Controllers;
 /// <summary>
@@ -49,5 +50,11 @@ public class DepartmentController : ControllerBase
     public IActionResult GetDepartWithActiveProjects()
     {
         return Ok(_departmentService.GetDepartWithActiveProjects());
+    }
+
+    [HttpGet("api/department/get-departments")]
+    public IActionResult GetDepartments()
+    {
+        return Ok(_departmentService.GetDepartments());
     }
 }

@@ -14,6 +14,8 @@ public interface IUserService
     // Получение ролей пользователей/сотрудников без дублей
     IEnumerable<RoleDTO> GetUsersRole();
     
+    IEnumerable<User> GetUsers();
+    
     // Поиск часто встречающейся роли
     RoleDTO GetFrequentRole();
     

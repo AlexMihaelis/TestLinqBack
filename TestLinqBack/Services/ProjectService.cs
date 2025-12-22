@@ -29,9 +29,11 @@ public class ProjectService : IProjectService
 
     // Задает, разве что Статус числами (1, 2 и тп) - UPD: зафигачен ненужный костыль :)
     // Фильтрация проектов по названию и статусу. Получение проектов по названию и статусу
-    public IEnumerable<Project> GetProjects(string name, ProjectStatus status)
+    public IEnumerable<Project> GetProjects(string name = null, ProjectStatus? status = null)
     {
-        return LinqData.Projects.Where(p => (p.Name.Contains(name)) && p.Status == status);
+        return LinqData.Projects.Where(p => 
+            (string.IsNullOrWhiteSpace(name) || p.Name.ToLower().Contains(name.ToLower()))
+            && (status == null || p.Status == status));
     }
     
     // Поиск проектов, которые не имеют ни одного документа
@@ -54,8 +56,23 @@ public class ProjectService : IProjectService
     // Получение объединенного списка проектов пользователя/сотрудника, а также тех проектов, где он менеджер
     public IEnumerable<Project> GetAllProjectsByUser(int userId)
     {
-        return LinqData.Users.First(u => u.Id == userId).Projects
-            .Union(LinqData.Projects.Where(p => p.ManagerId == userId));
+         return LinqData.Users.First(u => u.Id == userId).Projects
+             .Union(LinqData.Projects.Where(p => p.ManagerId == userId));
+    }
+
+    public IEnumerable<UserManagerProjectsDTO> GetAllProjectsByManagerUser()
+    {
+        return LinqData.Users.Select(u => new UserManagerProjectsDTO
+            {
+                Id = u.Id,
+                Name = u.Username,
+                ProjectName = LinqData.Projects
+                    .Where(p => p.ManagerId == u.Id)
+                    .Select(p => p.Name)
+                    .ToList()
+            })
+            .Where(dto => dto.ProjectName.Any()) 
+            .ToList();
     }
 
     // Поиск проектов менеджера

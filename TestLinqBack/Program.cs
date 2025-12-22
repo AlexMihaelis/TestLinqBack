@@ -27,11 +27,22 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 
+app.UseCors(x => x
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader());
+
+
 // Маппинг контроллеров
 app.MapControllers();
 
 // Бывший Hello World при запуске :]
 //app.MapGet("/", () => "Hello World!");
+
+app.MapControllers().RequireCors(x => x
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader());
 
 // Запуск нашего приложения
 app.Run();
